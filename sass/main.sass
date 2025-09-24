@@ -1,0 +1,208 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import fonts
+@import libs
+@import vars
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+::selection
+  background-color: $accent
+  color: #fff
+
+ul
+  list-style-type: none
+  li
+    padding: 0
+    margin: 0
+
+.header
+  background-color: $accent
+  color: #fff
+  padding: 15px
+  a
+    color: #fff
+
+  .header-top
+    display: flex
+    align-items: center
+    .logo-wrap
+      width: 50%
+    .top-menu-wrap
+      display: flex
+    .right-wrap
+      width: 30%
+      display: flex
+      justify-content: flex-end
+      .block
+        background-color: #444
+        color: #fff
+        width: 50px
+        height: 50px
+        border-radius: 50em
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 5px
+
+.menu-wrap
+  background-color: #fff
+  color: #444
+  ul
+    display: flex
+    li
+      display: block
+      padding: 15px
+      a
+        color: #444
+
+.slider-wrap
+  background-image: url(../img/slider-1.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 130px 0
+  .slider-content
+    text-align: center
+    color: #fff
+    .logo-img
+      width: 250px
+    .title
+      font-size: 56px
+      margin-bottom: 15px
+      font-weight: normal
+      font-style: italic
+      font-family: LavanderiaC
+
+.section
+  padding: 55px 0
+  .title
+    font-size: 32px
+    color: $accent
+    margin-bottom: 24px
+
+  &.news-wrap // news
+    background-color: #D6D6D6
+    .title
+      color: #272A2D
+    .block
+      width: 50%
+      float: left
+      .img-wrap
+        img
+          width: 100%
+      .content
+        background-color: #EFEFEF
+        .n-title
+          line-height: 1.2em
+          font-size: 18px
+      &:first-child
+        padding-right: 15px
+        .content
+          background-color: transparent
+          .n-title
+            font-size: 20px
+            font-weight: bold
+      &:not(:first-child)
+        display: flex
+        margin-bottom: 15px
+        .img-wrap
+          width: 40%
+          img
+            height: 100%
+            max-width: auto
+        .content
+          width: 60%
+          padding: 15px
+          .desc
+            overflow: hidden
+            max-height: 42px
+          .date
+            color: #999
+            font-size: 14px
+            margin-top: 10px
+            text-align: right
+  &.sec-4
+    .content-wrap
+      background-color: #F4F4F4
+      display: flex
+      .b-title
+        font-size: 20px
+        font-weight: bold
+      .left-wrap
+        width: 50%
+        padding: 25px
+      .right-wrap
+        width: 50%
+        img
+          width: 100%
+
+
+  &.sec-5
+    .title
+      color: #000
+    .contact-wrap
+      background-color: #F9F9F9
+      padding: 45px 45px 45px 65px
+      .block
+        color: #333333
+        display: flex
+        margin-bottom: 15px
+        a
+          color: #333333
+          margin-right: 15px
+        p
+          margin: 0
+
+
+// Всегда в конце
+@import media
