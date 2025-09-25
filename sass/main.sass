@@ -77,11 +77,23 @@ ul
     display: flex
     align-items: center
     .logo-wrap
-      width: 50%
+      width: 35%
+      display: flex
+      align-items: center
+      a
+        padding-left: 15px
     .top-menu-wrap
       display: flex
+      width: 45%
+      justify-content: end
+      ul
+        margin: 0
+        padding: 0
+        display: flex
+        li
+          padding: 5px 15px
     .right-wrap
-      width: 30%
+      width: 20%
       display: flex
       justify-content: flex-end
       .block
@@ -99,6 +111,8 @@ ul
   background-color: #fff
   color: #444
   ul
+    margin: 0
+    padding: 0
     display: flex
     li
       display: block
@@ -213,11 +227,48 @@ ul
 .footer
   background-color: #303030
   color: #fff
-  padding: 55px 0
+  padding: 55px 0 15px
   .logo-wrap
-    width: 80px
+    display: flex
+    align-items: center
     img
-      width: 100%
+      width: 80px
+    a
+      color: #fff
+      width: auto
+      padding-left: 15px
+      line-height: 1.2
+
+  .bottom-block
+    margin-top: 25px
+    a
+      color: $gold
+    p
+      margin: 3px 0
+      font-size: 14px
+
+  .block-wrap
+    .b-menu
+      margin: 0
+      a
+        color: #fff
+
+  .social-wrap
+    text-align: center
+    ul
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: center
+      gap: 15px
+      li
+        background: #fff
+        color: #000
+        width: 30px
+        height: 30px
+        border-radius: 50em
+        a
+          color: #000
 
 // acordion css
 
