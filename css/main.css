@@ -1471,14 +1471,18 @@ ul li {
 }
 .section.news-wrap .block:not(:first-child) .img-wrap {
   width: 40%;
+  height: 200px;
+  overflow: hidden;
 }
 .section.news-wrap .block:not(:first-child) .img-wrap img {
   height: 100%;
-  max-width: auto;
+  width: auto;
 }
 .section.news-wrap .block:not(:first-child) .content {
   width: 60%;
+  height: 200px;
   padding: 15px;
+  font-size: 14px;
 }
 .section.news-wrap .block:not(:first-child) .content .desc {
   overflow: hidden;
