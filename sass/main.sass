@@ -76,12 +76,18 @@ ul
   .header-top
     display: flex
     align-items: center
+    font-family: "Philosopher", sans-serif
+    font-style: normal
     .logo-wrap
       width: 35%
       display: flex
       align-items: center
       a
         padding-left: 15px
+        font-size: 22px
+        line-height: 1em
+        &:hover
+          text-decoration: none
     .top-menu-wrap
       display: flex
       width: 45%
@@ -90,6 +96,7 @@ ul
         margin: 0
         padding: 0
         display: flex
+        font-size: 20px
         li
           padding: 5px 15px
     .right-wrap
@@ -106,6 +113,29 @@ ul
         align-items: center
         justify-content: center
         margin: 5px
+.b-lang
+  position: relative
+  ul
+    list-style-type: none
+    padding: 12px
+    margin: 0
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 15em
+    &:hover
+      background-color: #444
+      li
+        display: block
+        padding: 5px 0
+    li
+      display: none
+      &.active
+        display: block
+      a
+        text-decoration: none
+        &:hover
+          color: $accent
 
 .menu-wrap
   background-color: #fff
@@ -117,8 +147,15 @@ ul
     li
       display: block
       padding: 15px
+      border-bottom: 2px solid #fff
+      &:hover
+        border-bottom: 2px solid $accent
       a
         color: #444
+        font-family: "Philosopher", sans-serif
+        &:hover
+          color: $accent
+          text-decoration: none
 
 .slider-wrap
   background-image: url(../img/slider-1.png)
@@ -262,9 +299,6 @@ ul
       justify-content: center
       gap: 15px
       li
-        background: #fff
-        color: #000
-        width: 30px
         height: 30px
         border-radius: 50em
         a
